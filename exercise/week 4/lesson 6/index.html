@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<meta charset =" UTF-8">
+	<link rel="stylesjeet" href="css/hw1.css">
+	</head>
+	<body>
+		
+		<form id="myform">
+			first number:<input  type="text"	id="n1"/><br><br>		
+			last number :<input  type="text"	id="n2"/><br><br>		
+			result :<input type="text"	id="n3" /><br><br>
+			<input type="button" value="submit" onclick="exe()">
+		</form>
+		<script type="text/javascript">
+			function exe(){
+					var number1 = document.getElementById('number1').value;
+					var number2 = document.getElementById('number2').value;
+					if( isNaN(number1)|| isNaN(number2)){
+					alert("value not a number");}
+				else{
+					var result = number1 + number2;
+					document.getElementById('n3').value = result;
+				}
+			}
+		</script>
+	</body>
+</html>
