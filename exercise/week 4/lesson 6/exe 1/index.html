@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<meta charset =" UTF-8">
+	<link rel="stylesjeet" href="css/hw1.css">
+	<title>exe 1 lesson 6</title>
+	<style>
+		table{
+			padding:30px;
+			border: 10px solid black;
+		}
+	</style>
+	</head>
+	<body>
+		
+		<form id="myform">
+			<table>
+
+					<tr>
+						<th>first number:</th>
+						<th><input  type="text"	id="n1"/><br><br></th>			
+					</tr>
+					<tr>
+						<th>last number :</th>
+						<th><input  type="text"	id="n2"/><br><br></th>
+					</tr>
+					<tr>
+						<th>result :</th>
+						<th><input type="text"	id="n3" /><br><br></th>
+					</tr>
+					<tr>
+						<th><input type="button" value="divide" ></th>
+						<th><input type="button" value="submit" onclick="checkForm()"></th>
+					</tr>
+			</table>
+		</form>
+		<script type="text/javascript">
+			function checkForm(){
+					var number1 = document.getElementById('n1').value;
+					var number2 = document.getElementById('n2').value;
+					var result = parseFloat(number1) * parseFloat(number2);
+					document.getElementById('n3').value = result;
+				}
+		
+		</script>
+	</body>
+</html>
