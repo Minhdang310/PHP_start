@@ -35,6 +35,7 @@
 		<table id="user-listing" style="width: 700px;">
 			<tr>
 			<td>UserName</td>
+			<td>Fullname</td>
 			<td>Trạng thái</td>
 			<td>Lần cập nhật cuối</td>
 			<td>Ngày lập</td>
@@ -46,6 +47,7 @@
 			?>
 			<tr>
 				<td><?= $row['username'] ?></td>
+				<td><?= $row['fullname'] ?></td>
 				<td><?= $row['status'] == 1?"Kích hoạt" : "Block" ?></td>
 				<td><?= date('d/m/Y H:i',$row['last_updated']) ?></td>
 				<td><?= date('d/m/Y H:i',$row['created_time']) ?></td>
