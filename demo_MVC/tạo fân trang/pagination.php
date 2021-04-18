@@ -2,7 +2,7 @@
 	.page-item{
 		font-size: 20px;
 		font-weight: bold;
-		margin: 30px;
+		margin: 10px;
 		border: 2px solid #ccc;
 	}
 </style>
